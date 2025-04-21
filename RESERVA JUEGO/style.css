@@ -9,11 +9,10 @@
     padding-top: 1000px;
     object-fit: cover;
 
-
 }
 
-.btn {
-    background-color: aqua;
-    padding: 15px 100px;
-    border: 0px;
+.form{
+    padding-left: 1400px;
+    padding-top: 1px;
+    object-fit: cover;
 }
