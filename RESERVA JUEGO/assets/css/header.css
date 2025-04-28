@@ -1,9 +1,12 @@
 .header {
-    background-color: #000000;
-    text-align: left 50;
-    padding: 40px;
-    font-family: sans-serif; color: white;
-    object-fit: cover;
-    
+    display: flex; 
 }
 
+
+.logo{
+    display: flex;
+}
+
+.logo-img{
+    height: 50px;
+}
