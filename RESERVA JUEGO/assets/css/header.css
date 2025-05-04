@@ -1,12 +1,58 @@
-.header {
-    display: flex; 
+header {
+    /*esto abarca toda la etiqueta <header> dentro del body la cual contiene diferentes divs*/
+    display: flex;  /* flex hace que se muestren los objetos en forma horizontal */
+    justify-content: space-between; /* ubica los elementos en el eje principal (eje X)*/
+    min-height: 70px; /* height le da altura al header, en este caso con min, le da altura minima al header*/
+    background-color: darkgray; /* le da color al fondo del header*/
+    font-family: sans-serif; /*cambia el font de las letras del header*/
+    align-items: center; /* centra los elementos en el (eje Y) */
+    padding: 15px; /* Separa los elementos del borde */
 }
 
 
 .logo{
+    /*dentro de la etiqueta header, esto abarca el logo (class="logo")*/
     display: flex;
+    align-items: center; /*centra el div que contiene el logo*/
 }
 
+
 .logo-img{
+    /*dentro de la etiqueta header, esto abarca la imagen del logo (class="logo-img")*/
     height: 50px;
+    margin-right: 10px; /*separa la imagen del logo hacia la derecha del nombre del logo*/
 }
+
+
+.nav-a-header{
+    font-weight: 600; /* aumenta el tamaño de la letra*/
+    padding-right: 10px; /* separa los elementos del borde hacia la derecha */
+}
+
+
+.nav-a-header a:hover{
+    /* a:hover hace que la class="nav-a-header" al pasar el cursor sobre las etiquetas 
+    que tienen <a> se colocaran de color blanco*/
+    color: white;
+}
+
+
+/*utilizamos @media query*/
+@media (max-width:700px){
+    /*cuando la ventana sea menor a 700 pixeles, se ejecuta esta query*/
+    header{
+        flex-direction: column;
+        /* todo lo que este dentro de la etiqueta <header> tomara la direccion
+        en forma de columna es decir (eje Y), se recomienda que el header no lleve
+        altura fija es decir, ocurriran errores si hay en header un height simple con un valor de pixeles 
+        asignados*/
+    }
+
+    .nav-a-header{
+        padding: 10px 0px;
+        /* hace que el nav con la class="nav-a-header" dentro del header separe
+        los elementos del borde al ejecutarse la query*/
+    }
+}
+
+

@@ -1,0 +1,5 @@
+a{
+    /*esto abarca las etiquetas <a> */
+    text-decoration: none; /*quita la linea que subraya los links (etiquetas <a>)*/
+    color: black; /*le cambia el color a las letras*/
+}
