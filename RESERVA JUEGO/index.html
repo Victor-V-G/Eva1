@@ -27,53 +27,39 @@
     </header>
     <!--AQUI FINALIZA EL HEADER-->
 
-    <!--AQUI COMIENZA EL MAIN, el cual lleva la imagen de fondo con el formulario-->
-    <main class="main-img">
-        <div class="main-txt">
-            <h1>-- PARTICIPA --</h1>
-            <h2>POR UNA COPIA DE</h2>
-            <h2>DARK SOULS TRIOLOGY</h2>
-            <p>para ello debes rellenar el siguiente formulario</p>
-            <p>que estara disponible hasta el 21-05-25</p>
-
+    <!--AQUI COMIENZA EL MAIN (ELEMENTO PADRE), EL CUAL LLEVA UNA IMAGEN DE FONDO-->
+    <main class="main-img-background">
+        <!--AQUI SE CREA EL DIV (ELEMENTO HIJO) PRINCIPAL QUE SERVIRA POSTERIORMENTE PARA QUE OTROS DIV ABARQUEN CIERTA PARTE DE LA IMAGEN DE FONDO-->
+        <div class="main-container">
+            <!--AQUI SE CREA EL DIV (ELEMENTO NIETO) QUE ABARCARA LA PARTE IZQUIERDA DE LA PANTALLA DENTRO DEL BACKGROUND IMAGE-->
+            <div class="main-left">
+                <h1>-- PARTICIPA --</h1>
+                <h2>POR UNA COPIA DE</h2>
+                <h2>DARK SOULS TRIOLOGY</h2>
+                <p>para ello debes rellenar el siguiente formulario</p>
+                <p>que estara disponible hasta el 21-05-25</p>
+            </div>
+            <!--AQUI SE CREA EL DIV (ELEMENTO NIETO) QUE ABARCARA LA PARTE DERECHA DE LA PANTALLA DENTRO DEL BACKGROUND IMAGE-->
+            <div class="main-right">
+                <!--AQUI SE CREA EL FORMULARIO (ELEMENTO BISNIETO)-->
+                <!-- class="form-box" SERA UTILIZADO PARA PODER MOLDEAR LA ETIQUETA FORM EN FORMA DE CAJA 
+                QUE TENDRA DENTRO EL FORMULARIO-->
+                <form class="form-box">
+                    <label>Nombre:</label><br/>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre"/><br/>
+                    <label>Apellido:</label><br/>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"/><br/>
+                    <label>Fecha de Nacimiento:</label><br/>
+                    <input type="date" name="fNacimiento" id="fNacimiento" placeholder="dd/mm/yyyy"/><br/>
+                    <label>Correo:</label><br/>="example@example.cl"/><br/>
+                    <button>Registrar:</button>
+                </form>
+            </div>
         </div>
     </main>
+    <!--AQUI FINALIZA EL MAIN-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div>
-        <link rel="stylesheet" href="style.css">
-    </div>
-    <div class="back-img">
-        <form class="form">
-            <label>Nombre:</label><br/>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre"/><br/>
-            <label>Apellido:</label><br/>
-            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"/><br/>
-            <label>Fecha de Nacimiento:</label><br/>
-            <input type="date" name="fNacimiento" id="fNacimiento" placeholder="dd/mm/yyyy"/><br/>
-            <label>Correo:</label><br/>="example@example.cl"/><br/>
-            <button>Registrar:</button>
-        </form>
     </div>
     <div>
         <link rel="stylesheet" href="assets/css/section2.css">

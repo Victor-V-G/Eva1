@@ -1,12 +1,36 @@
-.main-img{
-    background-image: url(img/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh !important; 
+.main-img-background{
+    background-image: url(img/background.png); /* SIRVE PARA AGREGAR UNA IMAGEN DE FONDO*/
+    background-size: cover; /* SIRVE PARA QUE LA IMAGEN DE FONDO CUBRA TOTALMENTE EL ELEMENTO EL CUAL ES EL <MAIN> CON
+    LA CLASE class="main-img-background" */
+    background-repeat: no-repeat; /* SIRVE PARA QUE LA IMAGEN NO SE REPITA INTENTANDO RELLENAR EL ELEMENTO, ESTO
+    SIRVE PARA QUE ABARQUE TODO EL ELEMENTO (<MAIN>) SOLO 1 IMAGEN*/
+    background-position: center;  /*SIRVE PARA CENTRAR LA IMAGEN DE FONDO DENTRO DEL ELEMENTO (<MAIN>) TANTO HORIZONTAL COMO
+    VERTICALMENTE*/
+    height: 100vh !important; /*
+    height: establece la altura de un elemento.
+    100vh: significa 100% de la altura de la ventana del navegador (viewport height). 
+    !important: le da prioridad máxima a esta regla, ignorando otras reglas height que puedan 
+    haber sido aplicadas anteriormente, incluso si tienen más especificidad.*/
 }
 
-.main-txt{
+
+.main-container {
+    display: flex; /* permite alinear y distribuir los elementos hijos (los "flex items") 
+    de forma más eficiente y con mucho control.
+    Una vez activado, puedes usar propiedades adicionales como:
+    flex-direction: para elegir si los elementos se alinean en fila (row) o columna (column).
+    justify-content: para alinear los elementos horizontalmente (ej. al centro, al inicio, con espacio entre ellos).
+    align-items: para alinearlos verticalmente.
+    gap: para poner espacio entre los hijos.*/
+    width: 100%; /*Hace que el ancho del contenedor sea el 100% del 
+    ancho de su elemento padre. O sea, ocupará todo el espacio horizontal disponible, SU ELEMENTO PADRE ES <MAIN>
+    LO CUAL OCUPARA TODO EL ANCHO DEL BACKGROUND IMAGE .*/
+    height: 100vh; /*Le da al contenedor una altura de 100% del alto de la pantalla 
+    visible del navegador (viewport).*/
+}
+
+/*FALTA COMENTAR QUE HACE CADA COSA*/
+.main-left{
     color: aliceblue;
     display: flex;
     flex-direction: column ;
@@ -15,4 +39,22 @@
     width: 50%;
     height: 600px;
 
+}
+
+
+.main-right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 600px;
+}
+
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 200px;
+    color: rgb(244, 5, 5);
 }
