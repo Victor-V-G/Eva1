@@ -1,0 +1,18 @@
+.main-img{
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh !important; 
+}
+
+.main-txt{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 600px;
+
+}

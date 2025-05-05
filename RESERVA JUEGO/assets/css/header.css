@@ -3,8 +3,8 @@ header {
     display: flex;  /* flex hace que se muestren los objetos en forma horizontal */
     justify-content: space-between; /* ubica los elementos en el eje principal (eje X)*/
     min-height: 70px; /* height le da altura al header, en este caso con min, le da altura minima al header*/
-    background-color: darkgray; /* le da color al fondo del header*/
-    font-family: sans-serif; /*cambia el font de las letras del header*/
+    background-color: rgb(53, 52, 52); /* le da color al fondo del header*/
+    font-family: sans-serif; /*cambia el font de las letras del header*/ /* para este trabajo esta sin uso*/
     align-items: center; /* centra los elementos en el (eje Y) */
     padding: 15px; /* Separa los elementos del borde */
 }
@@ -19,17 +19,17 @@ header {
 
 .logo-img{
     /*dentro de la etiqueta header, esto abarca la imagen del logo (class="logo-img")*/
-    height: 50px;
-    margin-right: 10px; /*separa la imagen del logo hacia la derecha del nombre del logo*/
+    height: 60px;
+    margin-left: 30px; /*separa la imagen del logo hacia la derecha del nombre del logo*/
 }
 
-
+/* para este trabajo esta sin uso*/
 .nav-a-header{
     font-weight: 600; /* aumenta el tamaño de la letra*/
     padding-right: 10px; /* separa los elementos del borde hacia la derecha */
 }
 
-
+/* para este trabajo esta sin uso*/
 .nav-a-header a:hover{
     /* a:hover hace que la class="nav-a-header" al pasar el cursor sobre las etiquetas 
     que tienen <a> se colocaran de color blanco*/

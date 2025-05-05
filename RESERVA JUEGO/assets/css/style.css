@@ -3,3 +3,7 @@ a{
     text-decoration: none; /*quita la linea que subraya los links (etiquetas <a>)*/
     color: black; /*le cambia el color a las letras*/
 }
+
+html{
+    background-color: rgb(43, 42, 42);
+}
