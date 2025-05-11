@@ -1,3 +1,4 @@
+/*CODIGO DEL BACKGROUND IMAGE*/
 .main-img-background{
     background-image: url(img/background.png); /* SIRVE PARA AGREGAR UNA IMAGEN DE FONDO*/
     background-size: cover; /* SIRVE PARA QUE LA IMAGEN DE FONDO CUBRA TOTALMENTE EL ELEMENTO EL CUAL ES EL <MAIN> CON
@@ -13,7 +14,7 @@
     haber sido aplicadas anteriormente, incluso si tienen más especificidad.*/
 }
 
-
+/*CODIGO DEL DIV PADRE*/
 .main-container {
     display: flex; /* permite alinear y distribuir los elementos hijos (los "flex items") 
     de forma más eficiente y con mucho control.
@@ -29,32 +30,74 @@
     visible del navegador (viewport).*/
 }
 
-/*FALTA COMENTAR QUE HACE CADA COSA*/
+/*CODIGO QUE MANEJA EL DIV HIJO QUE OCUPA LA PARTE DERECHA DEL DIV PADRE*/
 .main-left{
-    color: aliceblue;
+    color: aliceblue; /*LE DA COLOR AL TEXTO DENTRO DEL DIV*/
+    display: flex; /*OPCION QUE PERMITE USAR PROPIEDADES ADICIONALES PARA ALINEAR O DISTRIBUIR ELEMENTOS*/
+    flex-direction: column ; /*ORDENA LOS OBJETOS EN FORMA DE COLUMNA (UNO ENCIMA DE OTRO)*/
+    justify-content: center; /*CENTRA LOS ELEMENTOS DENTRO DEL DIV EN FORMA HORIZONTAL (EJE X)*/
+    align-items: center; /*CENTRA LOS ELEMENTOS DENTRO DEL DIV EN FORMA VERTICAL (EJE Y)
+    COMBINANDO JUSTIFI CONTENT: CENTER JUNTO CON ALIGN-ITEMS: CENTER; OBTENEMOS QUE LOS OBJETOS (LETRAS,CONTENEDORES,
+    ETC), QUEDEN CENTRADOS EN MEDIO DENTRO DEL DIV*/
+    width: 50%; /*HACE QUE EL DIV HIJO QUE ABARCA EL LADO DERECHO, OCUPE UN 50% DEL CONTENEDOR PADRE, ESTO
+    QUEDANDO, OCUPANDO LA MITAD DE LA PANTALLA (MITAD DEL DIV PADRE)*/
+    height: 100%; /*OCUPA EL 100% DEL TAMAÑO DEL DIV HIJO, OSEA OCUPARA EL 100% DEL 50% QUE OCUPA EL WIDTH DEL DIV HIJO DEL PADRE*/
+
+}
+
+/*CODIGO QUE MANEJA EL DIV HIJO QUE OCUPA LA PARTE IZQUIERDA DEL DIV PADRE*/
+.main-right{
+   display: flex; /*OPCION QUE PERMITE USAR PROPIEDADES ADICIONALES PARA ALINEAR O DISTRIBUIR ELEMENTOS*/
+   justify-content: center; /*CENTRA LOS ELEMENTOS DENTRO DEL DIV EN FORMA HORIZONTAL (EJE X)*/
+   align-items: center; /*CENTRA LOS ELEMENTOS DENTRO DEL DIV EN FORMA VERTICAL (EJE Y)
+   COMBINANDO JUSTIFI CONTENT: CENTER JUNTO CON ALIGN-ITEMS: CENTER; OBTENEMOS QUE LOS OBJETOS (LETRAS,CONTENEDORES,
+   ETC), QUEDEN CENTRADOS EN MEDIO DENTRO DEL DIV*/
+   width: 50%; /*HACE QUE EL DIV HIJO QUE ABARCA EL LADO DERECHO, OCUPE UN 50% DEL CONTENEDOR PADRE, ESTO
+   QUEDANDO, OCUPANDO LA MITAD DE LA PANTALLA (MITAD DEL DIV PADRE)*/
+   height: 100%; /*OCUPA EL 100% DEL TAMAÑO DEL DIV HIJO, OSEA OCUPARA EL 100% DEL 50% QUE OCUPA EL WIDTH DEL DIV HIJO DEL PADRE*/
+}
+
+/*CODIGO PARA CREAR LA CAJA QUE CONTIENE EL FORMULARIO*/
+.form-box{
+    background-color: rgba(255, 255, 255, 0.95); /*COLOR DE FONDO QUE TENDRA LA CAJA*/
+    padding: 60px; /*PADDING HACE QUE LA CAJA SE ALEJE (CREZCA) A PARTIR DEL CENTRO*/
+    border-radius: 20px; /*BORDER RADIUS, HACE QUE LAS ESQUINAS NO SEAN PLANAS, LO QUE HACE QUE LAS REDONDEE DANDOLE MEJOR FORMA*/
+    max-width: 200px; /*ESTABLECE EL ANCHO MAXIMO QUE PUEDE TENER LA CAJA*/
+    color: rgb(12, 12, 12); /*ESTABLECE EL COLOR DE LO QUE CONTIENE LA CAJA DENTRO (LETRAS DEL FORMULARIO)*/
+    padding-top: 20px;
+}
+
+/*CODIGO PARA EL TEXTO <p> DENTRO DEL FORMULARIO*/
+.style-main-p{
     display: flex;
-    flex-direction: column ;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 600px;
-
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px; /*HACE QUE EL CONTENEDOR SE ALEJE DESDE ABAJO*/
+    text-align: center; /*HACE QUE LAS LETRAS SE JUSTIFIQUEN*/
+    font-size: 14px; /*DA TAMAÑO A LAS LETRAS*/
+    font-family: Calibri;
+    
 }
 
 
-.main-right{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 50%;
-   height: 600px;
+input{
+    width: 100%;
+    height: 22px;
 }
 
 
-.form-box{
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 200px;
-    color: rgb(244, 5, 5);
+label{
+    display: flex;
+    align-items: center;
+    padding-right: 140px;
+    font-size: 15px;
+}
+
+.checkbox-form{
+    
+    width: 100%;
+    height: 20px;
+
 }
