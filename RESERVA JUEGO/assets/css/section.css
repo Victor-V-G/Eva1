@@ -45,5 +45,31 @@
 .main-div-section{
     width: 100%;
     background-color: red;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.image1{
+    width: 30%;
+    background-color: green;
+
+}
+
+.image2-div{
+    width: 30%;
+    background-color: rgb(54, 34, 236);
+    
+
+}
+
+.image2{
+    width: 100%;
+}
+
+.image3{
+    width: 30%;
+    background-color: rgb(239, 255, 19);
 
 }
