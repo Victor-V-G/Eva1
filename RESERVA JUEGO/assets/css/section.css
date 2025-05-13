@@ -1,0 +1,49 @@
+.section1 {
+    background-color: #948e8e;
+    text-align: right;
+    padding: 20px;
+    height: 100vh !important;
+    
+}
+
+.titulo1{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.parrafo1{
+    width: 70%;
+    margin: 0 auto; /*margin: 0 auto sirve para centrar automaticamente 
+    al centro de la pagina el contenido del div con el ancho 
+    (width) determinado*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+
+
+}
+
+#pStyle1{
+    color: rgb(133, 76, 5);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#pStyle2{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.main-div-section{
+    width: 100%;
+    background-color: red;
+
+}
