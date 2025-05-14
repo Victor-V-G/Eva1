@@ -1,7 +1,7 @@
 .section1 {
     background-color: #948e8e;
     text-align: right;
-    padding: 20px;
+    padding-bottom: 330px;
     height: 100vh !important;
     
 }
@@ -42,34 +42,69 @@
     font-size: 14px;
 }
 
+/*DIV PADRE DE LOS CONTENEDORES DE IMAGENES*/
 .main-div-section{
     width: 100%;
-    background-color: red;
     display: flex;
     justify-content: space-around;
+}
 
-
+/*CONTENEDOR DE IMAGEN 1*/
+.image1-div{
+    width: 30%;
 }
 
 .image1{
-    width: 30%;
-    background-color: green;
-
+    width: 100%;
 }
+/*-----------------------*/
 
+/*CONTENEDOR DE IMAGEN 2*/
 .image2-div{
     width: 30%;
-    background-color: rgb(54, 34, 236);
-    
-
 }
 
 .image2{
     width: 100%;
 }
+/*-----------------------*/
+
+/*CONTENEDOR DE IMAGEN 3*/
+.image3-div{
+    width: 30%;
+}
 
 .image3{
-    width: 30%;
-    background-color: rgb(239, 255, 19);
-
+    width: 100%;
 }
+/*-----------------------*/
+
+/*BOTON DEBAJO DE IMAGENES*/
+.buttom-main-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.buttom-box{
+    height: 30px;
+    width: 30%;
+    background-color: lightgray;
+}
+/*-----------------------*/
+
+/*DIV DE IMAGEN DEBAJO DEL BOTON*/
+.bottom-logo-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.bottom-logo-img{
+    width: 4%;
+}
+/*-----------------------*/
