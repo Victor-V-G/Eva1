@@ -1,8 +1,8 @@
 .section1 {
-    background-color: #948e8e;
+    background-color: #ff0000;
     text-align: right;
-    padding-bottom: 330px;
-    height: 100vh !important;
+    padding-bottom: 40px;
+    min-height: 70px;
     
 }
 
@@ -47,11 +47,15 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /*CONTENEDOR DE IMAGEN 1*/
 .image1-div{
     width: 30%;
+    min-width: 120px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .image1{
@@ -62,6 +66,9 @@
 /*CONTENEDOR DE IMAGEN 2*/
 .image2-div{
     width: 30%;
+    min-width: 120px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .image2{
@@ -72,6 +79,9 @@
 /*CONTENEDOR DE IMAGEN 3*/
 .image3-div{
     width: 30%;
+    min-width: 120px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .image3{
@@ -108,3 +118,16 @@
     width: 4%;
 }
 /*-----------------------*/
+
+
+
+@media (max-width:700px){
+    /*cuando la ventana sea menor a 700 pixeles, se ejecuta esta query*/
+    .section1{
+        flex-direction: column;
+        /* todo lo que este dentro de la etiqueta <section1> tomara la direccion
+        en forma de columna es decir (eje Y), se recomienda que el header no lleve
+        altura fija es decir, ocurriran errores si hay en header un height simple con un valor de pixeles 
+        asignados*/
+    }
+}
