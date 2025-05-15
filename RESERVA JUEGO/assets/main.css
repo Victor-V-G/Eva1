@@ -12,6 +12,7 @@
     100vh: significa 100% de la altura de la ventana del navegador (viewport height). 
     !important: le da prioridad máxima a esta regla, ignorando otras reglas height que puedan 
     haber sido aplicadas anteriormente, incluso si tienen más especificidad.*/
+    
 }
 
 /*CODIGO DEL DIV PADRE*/
@@ -28,6 +29,7 @@
     LO CUAL OCUPARA TODO EL ANCHO DEL BACKGROUND IMAGE .*/
     height: 100vh; /*Le da al contenedor una altura de 100% del alto de la pantalla 
     visible del navegador (viewport).*/
+
 }
 
 /*CODIGO QUE MANEJA EL DIV HIJO QUE OCUPA LA PARTE DERECHA DEL DIV PADRE*/
@@ -107,3 +109,5 @@ label{
     height: 40px;
     background-color: lightgray;
 }
+
+
