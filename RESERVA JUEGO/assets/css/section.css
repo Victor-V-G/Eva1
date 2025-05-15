@@ -1,9 +1,8 @@
 .section1 {
-    background-color: #ff0000;
+    background-color: #948e8e;
     text-align: right;
     padding-bottom: 40px;
     min-height: 70px;
-    
 }
 
 .titulo1{
@@ -53,9 +52,7 @@
 /*CONTENEDOR DE IMAGEN 1*/
 .image1-div{
     width: 30%;
-    min-width: 120px;
-    box-sizing: border-box;
-    padding: 5px;
+    
 }
 
 .image1{
@@ -66,9 +63,7 @@
 /*CONTENEDOR DE IMAGEN 2*/
 .image2-div{
     width: 30%;
-    min-width: 120px;
-    box-sizing: border-box;
-    padding: 5px;
+    
 }
 
 .image2{
@@ -79,9 +74,7 @@
 /*CONTENEDOR DE IMAGEN 3*/
 .image3-div{
     width: 30%;
-    min-width: 120px;
-    box-sizing: border-box;
-    padding: 5px;
+    
 }
 
 .image3{

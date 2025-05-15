@@ -1,7 +1,15 @@
-.footer {
-    background-color: #000000;
-    text-align: right;
-    padding: 70px;
-    font-family: sans-serif; color: white;
-    object-fit: cover;
+footer {
+    background-color: #948e8e;
+    min-height: 70px;
+    padding-bottom: 10px;
+}
+
+.pFooter{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
 }
